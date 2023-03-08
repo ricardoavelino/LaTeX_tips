@@ -22,7 +22,7 @@ To compile the LaTeX files, you can go to the ``TeX`` icon on the left bar and c
 
 ## 2.	Other helpful extensions at VSCode:
 
-- __LaTeX Utilities__: Help to create shortcuts for copying and pasting stuff. For example, with this extension you can copy a table in excel and it becomes a table with LaTeX code. Or even a .png image with the necessary syntax to add the figure in LaTex. Also help on writing equations etc.
+- __LaTeX Utilities__: Help to create shortcuts for copying and pasting stuff. For example, with this extension you can copy a table in excel and it becomes a table with LaTeX code. You can also copy a ``.png`` image and it becomes also a LaTeX code with the right syntax to add the figure in your document. It also helps on writing equations etc (read the docs).
 
 - https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities
 
