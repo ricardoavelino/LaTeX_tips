@@ -88,7 +88,7 @@ You can use any Git manager to do that. I have been using GitKraken
 
 ## 6.	Download template:
 
-Regarding the organization of the documment I have organized my _chapters, figures and extra pages_ in separate folders. The main file of the thesis: ``phd.tex`` only calls these files. The template is uploaded in this repository and it has been a cummulative work of many including:
+Regarding the organization of the documment I have organized my _chapters, figures and extra pages_ in separate folders. The main file of the thesis: ``phd.tex`` only calls these files. The template is uploaded in this repository and it has been a cummulative work of many people from my [research group](https://block.arch.ethz.ch/brg/) including:
 
 - [Matthias Rippmann](https://block.arch.ethz.ch/brg/people/matthias-rippmann)
 - [Robin Oval](https://block.arch.ethz.ch/brg/people/robin-oval)
