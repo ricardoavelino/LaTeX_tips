@@ -11,7 +11,7 @@ Since long, I have been using VSCode to code with Python and I decided to keep t
 
 Compiling LaTeX files in VSCode is easier since version 1.74. Make sure you have VSCode’s newest version and download the extension called “LaTeX Workshop” from James Yu.
 
- 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684503-5aa0e292-c05f-4e16-af43-9ea2be039eb3.png">
 
 His extension is maintained through this repo. If you have issues, you can look at the issue tracker and/or open your own:
 
@@ -19,7 +19,7 @@ His extension is maintained through this repo. If you have issues, you can look 
 
 To compile the LaTeX files, you can go to the “TeX” icon on the left bar and click on Build LaTeX Project and the document will be created, looking like the following:
 
- 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684554-0ff79796-c8e0-4cde-81a9-a75fdcc5d171.png">
 
 2)	Other helpful extensions at VS Code:
 
@@ -37,14 +37,15 @@ For managing citations, I have been using Zotero (thanks to @selina). It require
 
 -	https://www.zotero.org 
 
-My library at Zotero looks like this 
+My library at Zotero looks like this:
 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684629-4727f21e-7400-4239-ab54-2ad38412ccd8.png">
  
 You can adjust citations by directly clicking on them and editing any detail that is wrong.
 
 Make sure you install Zotero extensions to your browser, this way it is easier to import information about articles directly from the article page. For example, on the top left the icon “Save to Zotero” will import the information to your library (not always work).
 
- 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684717-34f899f9-05ac-40d7-a19a-d2466eba94c5.png">
 
 Keep your library clean as it will then help you to writing future articles, etc… Try to start early.
 
@@ -58,6 +59,7 @@ To achieve that, first download and install Zotero’s extension Better BibTeX:
 
 This extension eases the automatic export process. Once it is installed go ahead and export your library in Zotero > Export Library > Format: Better BibTeX > [x] Background Export > OK. As in the image below. 
 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684789-1c17d96e-b57f-453c-84d2-8d61bc861875.png">
  
 You can save the .bib within your thesis folder and link your references to it in LaTeX. If you are unsure how to do the LaTeX part make sure you read about it in the MULTIPLE LaTeX tutorials available online, for example here:
 
@@ -65,7 +67,7 @@ You can save the .bib within your thesis folder and link your references to it i
 
 For example, I exported my Zotero library to a file called references.bib within my Thesis folder. The citations will be automatically updated in this file if you make any modification, e.g., a correction in a citation that you imported wrongly. 
 
- 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684835-a9de437a-2dea-46c5-92c5-7b59da40fb2c.png">
 
 You can browse through some other cool Zotero extensions, I HIGHLY suggest that you use the Better BibTeX function to “standardize” all citation keys. I standardized all my citations as [AUTHOR LAST NAME]_[PAPER FIRST WORD]_[YEAR]. If you do that, Better BibTeX will overwrite all the citation keys that you import to this format and it will help you to cite them at your document afterwards. For example.
 
@@ -77,10 +79,11 @@ Also, the autocomplete functions of VSCode should work fairly well, so when you 
 
 To back up your document and keep track of your writing progress, I also suggest that you create a repository at GitHub to store your thesis and commit to it often.
 
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/36137188/223684880-106ee511-8f43-48d4-81f1-38f0c2488648.png">
  
 You can use any Git manager to do that. I have been using GitKraken
 
--	https://www.gitkraken.com 
+-	https://www.gitkraken.com
 
 
 
