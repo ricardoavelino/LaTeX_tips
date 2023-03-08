@@ -2,7 +2,7 @@
 
 Hello, I prepared this guide to share how I set up my thesis writing with LaTeX + VSCode + Zotero. I hope it helps. But remember, the best way is always your way.
 
-## 1.	Download VSCode + LaTeX Wokshop
+## 1.	Download VSCode + LaTeX Workshop
 
 Since long, I have been using [VSCode](https://github.com/microsoft/vscode) to code with Python and I decided to keep the same IDE for the thesis writing.
 
