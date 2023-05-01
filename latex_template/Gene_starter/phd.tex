@@ -1,0 +1,283 @@
+% DOCUMENT CLASS---------------------------------------
+\documentclass[10t, twoside]{report}
+
+\usepackage[round]{natbib}
+\usepackage[french,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\usepackage{comment}
+\usepackage{subcaption}
+\usepackage[justification=justified]{caption}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{afterpage}
+\usepackage{bm}
+\usepackage{url}
+\usepackage{xcolor}
+\definecolor{lightblue}{RGB}{0, 127, 255}
+\definecolor{lightpink}{RGB}{255, 0, 127}
+\definecolor{black}{RGB}{0, 0, 0}
+% \definecolor{green}{RGB}{0,191,0}
+\definecolor{green}{RGB}{30, 115, 52}
+\definecolor{red}{RGB}{255,0,0}
+\definecolor{blue}{RGB}{0,0,255}
+
+% code syntax hightlight
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+% 
+
+% for grid subfigures
+% https://tex.stackexchange.com/questions/586206/grid-of-subfigures-with-one-caption-per-row-on-the-left
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}} % w/ horizontal centering
+
+% Customised remark
+\newcounter{remark}
+\newcommand{\remark}[1]
+{\refstepcounter{remark}%
+\par\noindent \textbf{Remark \theremark.}\:#1\medskip\par}
+% modified from https://tex.stackexchange.com/questions/245070/how-to-number-and-reference-to-definitions-in-latex
+
+% \usepackage[colorlinks=true, linkcolor=lightpink, citecolor=lightblue, menucolor=black, breaklinks=true]{hyperref}  
+% \usepackage[colorlinks=true, linkcolor=blue, citecolor=red, menucolor=black, breaklinks=true]{hyperref}
+\usepackage[colorlinks=true, linkcolor=lightpink, citecolor=lightblue, urlcolor=gray, breaklinks=true, backref=page]{hyperref}  
+% change the backreference style https://tex.stackexchange.com/questions/173046/modifying-backreference-page-numbers-in-references
+% \renewcommand\backrefxxx[3]{%
+%   \hyperlink{page.#1}{(cit. on pp. #1)}%
+% }
+% \renewcommand\backrefxxx[3]{%
+%   \hyperlink{page.#1}{$\uparrow$ p.#1}%
+% }
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\BR@backref}{\newblock}{\newblock($\uparrow$ p.~}{}{}
+\patchcmd{\BR@backref}{\par}{)\par}{}{}
+\makeatother
+% https://tex.stackexchange.com/questions/36307/formatting-back-references-in-bibliography
+
+\usepackage{colortbl}
+% \usepackage{algorithm2e}
+\usepackage{adjustbox}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{pifont}
+\usepackage{tikzscale}
+\usepackage[justification=centering]{subcaption}
+
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table} 
+%https://tex.stackexchange.com/questions/22751/how-to-force-table-caption-on-top
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{3}
+\def\labelitemii{$\circ$}
+% \usepackage{breakcites}
+\usepackage{booktabs}
+\usepackage{helvet}
+\def\hyph{-\penalty0\hskip0pt\relax}
+\usepackage{doi}
+% \usepackage{underscore}
+
+% Added recently
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{physics}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{layouts}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\usepackage[super]{nth}
+
+\usepackage{nameref}  % reference chapter name
+% This code enables nameref to reference the correct part name. 
+\titleformat{\section}{\normalfont\bfseries}{\thesection\hspace{3pt}$\vert$}{3pt}{}
+\titleformat{\subsection}{\normalfont\slshape}{\thesubsection\hspace{3pt}$\vert$}{3pt}{}
+\titleformat{\subsubsection}{\normalfont}{\thesubsubsection\hspace{3pt}$\vert$}{3pt}{}
+\titleformat{\paragraph}{\normalfont\slshape}{\theparagraph\hspace{3pt}$\vert$}{3pt}{}{}
+\titleformat{\subparagraph}{\normalfont}{\thesubparagraph\hspace{3pt}$\vert$}{3pt}{}{}
+\usepackage{hyperref}
+\makeatletter
+\let\oldpart\part
+\def\part#1{\def\@currentlabelname{#1}\oldpart{#1}}
+\makeatother
+% https://tex.stackexchange.com/questions/211035/problems-with-nameref-not-refering-to-the-correct-label-x-titlesec
+
+\usepackage{setspace}
+\onehalfspacing
+% \setstretch{1.25}
+% \doublespacing
+
+%\usepackage{hyphenat}
+%\usepackage[shortcuts]{extdash}
+
+% % change Figure to Fig.
+% \makeatletter
+% \renewcommand{\fnum@figure}{Fig. \thefigure}
+% \makeatother
+
+\citestyle{acmauthoryear}
+\setcitestyle{square}
+
+\usepackage{bookmark} % include additional book mark to pdf
+
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
+
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\thispagestyle{empty}%
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\geometry{paperheight=24cm, paperwidth=16.5cm}
+% \geometry{paperheight=24cm, paperwidth=18.5cm}  % for review
+%\geometry{left=1cm, right=1cm}
+% \geometry{a4paper}                         % ... or a4paper or a5paper or ..
+
+\usepackage{sectsty}
+\chapternumberfont{\fontsize{14pt}{14pt}\selectfont}  % reduced
+\chaptertitlefont{\fontsize{20pt}{20pt}\selectfont}  % reduced
+\sectionfont{\fontsize{14pt}{14pt}\selectfont}  % original size
+\subsectionfont{\fontsize{12pt}{12pt}\selectfont}  % original size
+
+
+% \usepackage{lipsum}   % for filler text
+
+% Quotes --------------------------------------
+% chapter quote style
+\usepackage{epigraph}
+% \epigraphfontsize{\small\itshape}
+\setlength\epigraphwidth{0.89\linewidth}
+\setlength\epigraphrule{0pt}
+\renewcommand*{\textflush}{flushright}
+\renewcommand*{\epigraphsize}{\small\itshape}
+
+% in paragraph quote
+% \usepackage{etoolbox}
+% \AtBeginEnvironment{quote}{\par\singlespacing\small}
+
+% IMAGES --------------------------------------
+\usepackage{graphicx}
+\graphicspath{ {./figures/}}
+
+
+% PseudoCode --------------------------------
+
+\usepackage{algpseudocode}
+
+% START DOCUMENT ---------------------------------------------------------------
+
+% \usepackage{totcount}
+% \newtotcounter{citnum} %From the package documentation
+% \def\oldbibitem{} \let\oldbibitem=\bibitem
+% \def\bibitem{\stepcounter{citnum}\oldbibitem}
+
+
+\begin{document} 
+
+% ---------- Preface
+
+\include{./pages/front_page.tex}
+
+\include{./pages/title_page.tex}
+
+\sloppy
+
+\include{./pages/dedication.tex}
+
+\include{./pages/acknowledgements.tex}
+
+\include{./pages/abstract.tex}
+
+% ---------- Table of Contents
+
+\include{./parts/TOC.tex}
+
+% \include{./pages/citation.tex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase{\leftmark}}
+\fancyhead[RO]{\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+
+% \paperwidth=\dimexpr \paperwidth + 6cm\relax
+% \oddsidemargin=\dimexpr\oddsidemargin - 1.5cm\relax
+% \evensidemargin=\dimexpr\evensidemargin - 2.5cm\relax
+% \marginparwidth=\dimexpr \marginparwidth + 3cm\relax
+
+% ---------- Part I - Introduction
+
+\include{./parts/part_I.tex}
+
+\include{./chapters/background.tex}
+
+% ---------- Part II - Equilibrium solvers
+
+\include{./parts/part_II.tex}
+
+\include{./chapters/cra.tex}
+
+
+% ---------- 
+\bookmarksetup{startatroot}
+% ------- end 
+
+\include{./pages/list_figures.tex}
+\include{./pages/list_tables.tex}
+\include{./pages/notation.tex}
+
+% --------- Bibliography 
+
+\include{./parts/bibliography.tex}
+
+% \include{./pages/x_about_author.tex}
+
+% \cleartoleftpage
+% \include{./pages/xx_back_page.tex}
+
+\end{document}

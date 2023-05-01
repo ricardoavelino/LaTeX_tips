@@ -1,0 +1,16 @@
+% \chapter*{List of Table}
+\begingroup
+
+\chapter*{\label{table_index}List of Tables}
+\renewcommand{\chapter}[2]{}
+
+\hypersetup{linkcolor=black}
+
+\addcontentsline{toc}{chapter}{List of Tables}
+\bookmarksetup{startatroot}
+
+\listoftables
+\endgroup
+
+\cleardoublepage{}
+\thispagestyle{empty}

@@ -1,0 +1,22 @@
+{
+    "grammarly.config.documentDialect": "british",
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file"
+        }
+    ],
+    "grammarly.config.documentDomain": "academic",
+    "grammarly.config.suggestions.ConjunctionAtStartOfSentence": true,
+    "grammarly.config.suggestions.InformalPronounsAcademic": true,
+    "grammarly.config.suggestions.OxfordComma": true,
+    "grammarly.config.suggestions.PrepositionAtTheEndOfSentence": true,
+    "grammarly.config.suggestions.StylisticFragments": true,
+    "grammarly.config.suggestions.UnnecessaryEllipses": true,
+    "grammarly.files.include": [
+        "**/readme.md",
+        "**/README.md",
+        "**/*.txt",
+        "*.tex"
+    ]
+}
