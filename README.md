@@ -1,10 +1,10 @@
 # Tips on LaTeX thesis writing
 
-Hello, I prepared this guide to share how I set up my thesis writing with LaTeX + VSCode + Zotero. I hope it helps. But remember, the best way is always your way.
+Hello, @GeneKao and I prepared this guide to share our experience setting up our PhD thesis writing with LaTeX + VSCode + Zotero. We hope it helps. But remember, the best way is always your way.
 
 ## 1.	Download VSCode + LaTeX Workshop
 
-Since long, I have been using [VSCode](https://github.com/microsoft/vscode) to code with Python and I decided to keep the same IDE for the thesis writing.
+This implementation is based in [VSCode](https://github.com/microsoft/vscode) as IDE. Information about VSCode can be seen at:
 
 -	https://code.visualstudio.com
 
@@ -32,11 +32,11 @@ To compile the LaTeX files, you can go to the ``TeX`` icon on the left bar and c
 
 ## 3.	Managing citations with Zotero:
 
-For managing citations, I have been using [Zotero](https://www.zotero.org). It requires a good amount of commitment and it will not be perfect right away. Many citations come wrong and it is a time-consuming process to edit all of them, but it pays off at the end…
+For managing citations, [Zotero](https://www.zotero.org) is a great option. It requires a good amount of commitment and it will not be perfect right away. Many citations come wrong and it is a time-consuming process to edit all of them, but it pays off at the end…
 
 -	https://www.zotero.org 
 
-My library at Zotero looks like this:
+After you added some of your literature to it, a Zotero library should look like this:
 
 <img width="1550" alt="image" src="https://user-images.githubusercontent.com/36137188/223688139-19f9142f-906a-4cea-9f96-b068a709d3c4.png">
 
@@ -66,7 +66,7 @@ You can save the ``.bib`` within your thesis folder and link your references to 
 
 -	https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex 
 
-For example, I exported my Zotero library to a file called references.bib within my Thesis folder. The citations will be automatically updated in this file if you make any modification, e.g., a correction in a citation that you imported wrongly. 
+In the example example, the Zotero library is exported to a file called references.bib within the Thesis folder. The citations will be automatically updated in this file if you make any modification, e.g., a correction in a citation that you imported wrongly. 
 
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/36137188/223689620-57134d3c-b536-4968-a283-e1d2366910c3.png">
 
@@ -78,17 +78,21 @@ Also, the autocomplete functions of VSCode should work fairly well, so when you 
 
 ## 5.	Create a repository to store your thesis as you write it:
 
-To back up your document and keep track of your writing progress, I also suggest that you create a repository at GitHub to store your thesis and commit to it as you go.
+To back up your document and keep track of your writing progress, it is useful to create a repository at GitHub to store your thesis and commit to it as you go.
 
 <img width="909" alt="image" src="https://user-images.githubusercontent.com/36137188/223690366-74f79a6c-5cc6-45dc-b5e0-4174313389b0.png">
 
-You can use any Git manager to do that. I have been using GitKraken
+You can use any Git manager to do that, from which wi suggest GitKraken:
 
 -	https://www.gitkraken.com
 
 ## 6.	Download template:
 
-Regarding the organization of the documment I have organized my _chapters, figures and extra pages_ in separate folders. The main file of the thesis: ``phd.tex`` only calls these files. The template is uploaded in this repository and it has been a cummulative work of many people from my [research group](https://block.arch.ethz.ch/brg/) including:
+A cleaned verison of the template can be downloaded in this repository, added by @GeneKao.
+
+It includes the thesis content divided in parts, chaptes, figures and extra pages. The main file of the thesis: ``phd.tex`` will call out these files to compile your final document. 
+
+The uploaded template has been a cummulative work of many people from my [research group](https://block.arch.ethz.ch/brg/) including:
 
 - [Tomás Méndez Echenagucia](https://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia)
 - [Matthias Rippmann](https://block.arch.ethz.ch/brg/people/matthias-rippmann)
