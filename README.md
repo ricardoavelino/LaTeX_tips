@@ -1,6 +1,6 @@
 # Tips on LaTeX thesis writing
 
-Hello, @GeneKao and I prepared this guide to share our experience setting up our PhD thesis writing with LaTeX + VSCode + Zotero. We hope it helps. But remember, the best way is always your way.
+Hello, (Gene)[https://github.com/GeneKao] and I prepared this guide to share our experience setting up our PhD thesis writing with LaTeX + VSCode + Zotero. We hope it helps. But remember, the best way is always your way.
 
 ## 1.	Download VSCode + LaTeX Workshop
 
@@ -88,7 +88,7 @@ You can use any Git manager to do that, from which wi suggest GitKraken:
 
 ## 6.	Download template:
 
-A cleaned verison of the template can be downloaded in this repository, added by @GeneKao.
+A cleaned verison of the template can be downloaded in this repository, added by (Gene)[https://github.com/GeneKao].
 
 It includes the thesis content divided in parts, chaptes, figures and extra pages. The main file of the thesis: ``phd.tex`` will call out these files to compile your final document. 
 
